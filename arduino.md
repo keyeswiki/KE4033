@@ -11,6 +11,20 @@ Arduino是一款开源电子原型平台，特别适合电子爱好者和初学�
 
 ## 3. 测试代码  
 
+- 下载资料：[Arduino](./Arduino.7z)
+
+- 打开Arduino IDE，选择“项目”，选择“导入库”，再选择“添加.ZIP库”。
+
+  ![](./media/image-20250816111417240.png)
+
+- 找到下载资料的存放位置，打开文件夹找到库文件，选择要导入的库，点击“打开”。
+
+  ![](./media/image-20250816110403850.png)
+
+- 安装成功出现的界面。
+
+  ![](./media/image-20250816111452229.png)
+
 ```cpp  
 #include <dht11.h>  
 
@@ -50,18 +64,13 @@ void loop() {
     Serial.println(DHT.temperature, 1);  
     delay(1000);  
 }  
-```  
+```
 
 ## 4. 测试结果  
 
 按照上图接好线，烧录好代码，上电后，您可以在软件串口监视器中看到当前环境温度值和湿度值，如下图所示。  
 
 ![](media/f7625c45e40ebca246abd30e4bc7d32a.png)  
-
-## 5. 相关库文件链接地址  
-
-[相关库文件](https://pan.baidu.com/s/1WGbYih4yH--6moqK9HsKRg)  
-提取码：9afu
 
 
 
